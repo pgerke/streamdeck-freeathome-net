@@ -12,11 +12,14 @@
           ],
           "SupportedInMultiActions": true,
           "Tooltip": "Tests the connection to the free@home SysAP.",
-          "UUID": "com.philipgerke.freeathome.test"
+          "UUID": "com.philipgerke.freeathome.test",
+          "PropertyInspectorPath": "PropertyInspector/ConnectionTest.html"
       }
   ],
   "SDKVersion": 2,
   "Author": "Philip Gerke",
+  "Category": "free@home",
+  "CategoryIcon": "Images/pluginIcon",
   "CodePath": "com.philipgerke.freeathome",
   "Description": "A free@home plugin for the Elgato Stream Deck",
   "Name": "free@home",

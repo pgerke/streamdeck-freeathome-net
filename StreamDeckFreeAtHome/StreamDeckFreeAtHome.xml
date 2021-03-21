@@ -39,5 +39,25 @@
                 The entry point class.
             </summary>
         </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings">
+            <summary>
+                The settings class for the <see cref="T:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin"/>.
+            </summary>
+        </member>
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings.SysApIpAddress">
+            <summary>
+                Gets or sets the IP address for the free@home system access point (SysAP).
+            </summary>
+        </member>
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings.SysApUserID">
+            <summary>
+                Gets or sets the user ID to be used to connect to the SysAP.
+            </summary>
+        </member>
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings.SysApPassword">
+            <summary>
+                Gets or sets the user password to be used to connect to the SysAP.
+            </summary>
+        </member>
     </members>
 </doc>

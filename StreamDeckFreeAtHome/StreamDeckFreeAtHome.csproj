@@ -13,11 +13,12 @@
     <RepositoryUrl>https://github.com/pgerke/streamdeck-freeathome</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>StreamDeck FreeAtHome</PackageTags>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-alpha</Version>
     <Description>A plugin for the Elgato Stream Deck that interfaces with the Free@Home System Access Point</Description>
     <Copyright>Philip Gerke © 2021</Copyright>
     <AssemblyName>com.philipgerke.freeathome</AssemblyName>
     <ApplicationIcon>pluginIcon.ico</ApplicationIcon>
+    <PackageIcon>pluginIcon@2x.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -30,28 +31,80 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\actionIconTest%402x.png" />
+    <None Remove="Images\actionIconTest.png" />
+    <None Remove="Images\actionTestImage%402x.png" />
+    <None Remove="Images\actionTestImage.png" />
+    <None Remove="Images\pluginIcon%402x.png" />
+    <None Remove="Images\pluginIcon.png" />
+    <None Remove="PropertyInspector\caret.svg" />
+    <None Remove="PropertyInspector\check.png" />
+    <None Remove="PropertyInspector\check.svg" />
+    <None Remove="PropertyInspector\ConnectionTest.html" />
+    <None Remove="PropertyInspector\elg_calendar.svg" />
+    <None Remove="PropertyInspector\elg_calendar_inv.svg" />
+    <None Remove="PropertyInspector\rcheck.svg" />
+    <None Remove="PropertyInspector\sdpi.css" />
+    <None Remove="PropertyInspector\sdtools.common.js" />
+    <None Include="Images\pluginIcon@2x.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\actionIconTest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\actionIconTest@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\actionTestImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\actionTestImage@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\pluginIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\pluginIcon@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\caret.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\check.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\check.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\elg_calendar.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\elg_calendar_inv.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\rcheck.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\ConnectionTest.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\sdpi.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PropertyInspector\sdtools.common.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="StreamDeck-Tools" Version="3.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Images\actionIconTest%402x.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\actionIconTest.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\actionTestImage%402x.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\actionTestImage.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\pluginIcon%402x.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\pluginIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
