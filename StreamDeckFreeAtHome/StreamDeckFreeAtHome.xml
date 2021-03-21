@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>com.philipgerke.freeathome</name>
+    </assembly>
+    <members>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin">
+            <summary>
+                A stream deck action that verifies the connection to a system access point.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin"/> instance.
+            </summary>
+            <param name="connection">The Stream Deck connection.</param>
+            <param name="payload">The initial payload.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.KeyReleased(BarRaider.SdTools.KeyPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.OnTick">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.ReceivedGlobalSettings(BarRaider.SdTools.ReceivedGlobalSettingsPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.Program">
+            <summary>
+                The entry point class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,35 @@
+{
+  "Actions": [
+      {
+          "Icon": "Images/actionIconTest",
+          "Name": "Test",
+          "States": [
+              {
+                  "Image": "Images/actionTestImage",
+                  "TitleAlignment": "middle",
+                  "FontSize": "16"
+              }
+          ],
+          "SupportedInMultiActions": true,
+          "Tooltip": "Tests the connection to the free@home SysAP.",
+          "UUID": "com.philipgerke.freeathome.test"
+      }
+  ],
+  "SDKVersion": 2,
+  "Author": "Philip Gerke",
+  "CodePath": "com.philipgerke.freeathome",
+  "Description": "A free@home plugin for the Elgato Stream Deck",
+  "Name": "free@home",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://github.com/pgerke/streamdeck-freeathome/",
+  "Version": "0.1.0",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.4.1"
+  }
+}

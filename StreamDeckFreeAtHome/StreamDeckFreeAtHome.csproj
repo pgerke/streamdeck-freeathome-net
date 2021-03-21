@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>PhilipGerke.StreamDeckFreeAtHome</RootNamespace>
+    <Authors>Philip Gerke</Authors>
+    <PackageId>PhilipGerke.StreamDeckFreeAtHome</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Product>Stream Deck free@home</Product>
+    <PackageProjectUrl>https://github.com/pgerke/streamdeck-freeathome</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/pgerke/streamdeck-freeathome</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>StreamDeck FreeAtHome</PackageTags>
+    <Version>0.1.0</Version>
+    <Description>A plugin for the Elgato Stream Deck that interfaces with the Free@Home System Access Point</Description>
+    <Copyright>Philip Gerke © 2021</Copyright>
+    <AssemblyName>com.philipgerke.freeathome</AssemblyName>
+    <ApplicationIcon>pluginIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>StreamDeckFreeAtHome.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StreamDeck-Tools" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\actionIconTest%402x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\actionIconTest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\actionTestImage%402x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\actionTestImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\pluginIcon%402x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\pluginIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
