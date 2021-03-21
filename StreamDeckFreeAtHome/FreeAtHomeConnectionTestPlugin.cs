@@ -47,13 +47,11 @@ namespace PhilipGerke.StreamDeckFreeAtHome
             if(response.IsSuccessStatusCode)
             {
                 Logger.Instance.LogMessage(TracingLevel.INFO, "Connection test successful");
-                await Connection.SetTitleAsync("OK!‍");
                 await Connection.ShowOk();
             }
             else
             {
                 Logger.Instance.LogMessage(TracingLevel.ERROR, "Connection test failed: " + await response.Content.ReadAsStringAsync());
-                await Connection.SetTitleAsync("Error!");
                 await Connection.ShowAlert();
             }
         }

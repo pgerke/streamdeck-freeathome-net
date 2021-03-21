@@ -2,7 +2,7 @@
   "Actions": [
       {
           "Icon": "Images/actionIconTest",
-          "Name": "Test",
+          "Name": "Connection Test",
           "States": [
               {
                   "Image": "Images/actionTestImage",
