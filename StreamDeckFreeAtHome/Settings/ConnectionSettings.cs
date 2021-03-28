@@ -4,10 +4,10 @@ using System;
 namespace PhilipGerke.StreamDeckFreeAtHome.Settings
 {
     /// <summary>
-    ///     The settings class for the <see cref="FreeAtHomeConnectionTestPlugin"/>.
+    ///     The class defining the connection settings for a free@home system access point.
     /// </summary>
     [Serializable]
-    public sealed class ConnectionTestSettings
+    public class ConnectionSettings
     {
         /// <summary>
         ///     Gets or sets the IP address for the free@home system access point (SysAP).

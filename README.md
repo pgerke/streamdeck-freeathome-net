@@ -2,37 +2,61 @@
 
 A free@home plugin for the Elgato Stream Deck implemented in .NET5.
 
+## Prerequisites ##
+
+* A free@home system access point with firmware version >= v2.6.0
+    * The local API feature has to be enabled.
+    * Valid user credentials for a local API user.
+
  ## Functionality ##
 
+* **Binary switches**: See and toggle the state of a binary switch.
 * **Test Action**: Verify a connection can be made with the specified parameters.
 
 ### Planned features ###
 
-* Binary switches
-* Scenes
-* Dimmers
+* Dimmers ⚡
 * Room Temperator Sensors
+* Scenes
+* Blinds
 
  ## I found a bug, what do I do? ##
- *Coming soon* 👀
+
+I'm happy to hear any feedback regarding the plugin or it's implementation, be it critizism, praise or rants. Please create a [GitHub issue](https://github.com/pgerke/streamdeck-freeathome/issues) or drop me an [email](mailto:info@philipgerke.com) if you would like to contact me. 
+
+I would especially appreciate, if you could report any issues you encounter while using or setting up the plugin. Issues I know about, I can probably fix.
+
+If you want to submit a bug report, please check if the issue you have has already been reported. If you want to contribute additional information to the issue, please add it to the existing issue instead of creating another one. Duplicate issues will take time from bugfixing and thus delay a fix.
+
+While creating a bug report, please make it easy for me to fix it by giving us all the details you have about the issue. Always include the version of the plugin and a short concise description of the issue. Besides that, there are a few other pieces of information that help tracking down bugs:
+
+* The operating system you are using and it's version
+* The version of the stream deck software and the model
+* Some steps to reproduce the issue
+* The expected behaviour and how the plugin failed to meet that expectation
+* Anything else you think I might need
 
  ## I have a feature request, what do I do? ##
-*Coming soon* 👀
+
+ Please create a [GitHub issue](https://github.com/pgerke/streamdeck-freeathome/issues) or drop me an [email](mailto:info@philipgerke.com)
+
+## Privacy Policy ##
+
+The free@home plugin for the Elgato Stream Deck does not use cookies or tracking or collect personal data of any kind. And it never will. Period.
 
 ## Glossary ##
 
 * **SysAP**: System Access Point
 
-## License ##
-MIT License
+## Open Source Acknowledgement ##
 
-Copyright (c) 2019
+| Component | License | Version |
+| :-------- | :-----: | ------: |
+| [Bootstrap Icons](https://icons.getbootstrap.com/) | MIT | v1.4.0 |
+| [StreamDeck-Tools](https://github.com/BarRaider/streamdeck-tools) | | v3.2.0 |
+| [Websocket.Client](https://github.com/Marfusios/websocket-client) | MIT | v4.3.30 |
+| [Microsoft .NET](https://github.com/microsoft/dotnet) | MIT | v5.0.201 |
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <hr>
 

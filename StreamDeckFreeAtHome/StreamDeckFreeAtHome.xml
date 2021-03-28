@@ -4,34 +4,100 @@
         <name>com.philipgerke.freeathome</name>
     </assembly>
     <members>
-        <member name="T:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin">
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.BasePlugin">
             <summary>
-                A stream deck action that verifies the connection to a system access point.
+                A base plugin that implements the abstract methods from the <see cref="T:BarRaider.SdTools.PluginBase"/>.
             </summary>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+        <member name="F:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.httpClient">
             <summary>
-                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin"/> instance.
+                The singleton <see cref="F:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.httpClient"/> instance to be used.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin"/> instance.
             </summary>
             <param name="connection">The Stream Deck connection.</param>
             <param name="payload">The initial payload.</param>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.Dispose">
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.Dispose">
             <inheritdoc/>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
             <inheritdoc/>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.KeyReleased(BarRaider.SdTools.KeyPayload)">
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.KeyReleased(BarRaider.SdTools.KeyPayload)">
             <inheritdoc/>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.OnTick">
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.OnTick">
             <inheritdoc/>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.ReceivedGlobalSettings(BarRaider.SdTools.ReceivedGlobalSettingsPayload)">
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.ReceivedGlobalSettings(BarRaider.SdTools.ReceivedGlobalSettingsPayload)">
             <inheritdoc/>
         </member>
-        <member name="M:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.BasePlugin`1">
+            <summary>
+                A base plugin that implements the abstract methods from the <see cref="T:BarRaider.SdTools.PluginBase"/>.
+            </summary>
+        </member>
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.BasePlugin`1.Settings">
+            <summary>
+                Gets or sets the plugin settings.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin`1.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin"/> instance.
+            </summary>
+            <param name="connection">The Stream Deck connection.</param>
+            <param name="payload">The initial payload.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin`1.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BasePlugin`1.SetAuthenticationHeader">
+            <summary>
+                Sets the authentication header for the HTTP client.
+            </summary>
+        </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.BinarySwitchPlugin">
+            <summary>
+                A stream deck action that shows the state of a binary switch and allows to toggle it.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BinarySwitchPlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.BinarySwitchPlugin"/> instance.
+            </summary>
+            <param name="connection">The Stream Deck connection.</param>
+            <param name="payload">The initial payload.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BinarySwitchPlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BinarySwitchPlugin.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.BinarySwitchPlugin.ProcessMessage(Websocket.Client.ResponseMessage)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.ConnectionTestPlugin">
+            <summary>
+                A stream deck action that verifies the connection to a system access point.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.ConnectionTestPlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.ConnectionTestPlugin"/> instance.
+            </summary>
+            <param name="connection">The Stream Deck connection.</param>
+            <param name="payload">The initial payload.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.ConnectionTestPlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
             <inheritdoc/>
         </member>
         <member name="T:PhilipGerke.StreamDeckFreeAtHome.Program">
@@ -39,25 +105,64 @@
                 The entry point class.
             </summary>
         </member>
-        <member name="T:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings">
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionSettings">
             <summary>
-                The settings class for the <see cref="T:PhilipGerke.StreamDeckFreeAtHome.FreeAtHomeConnectionTestPlugin"/>.
+                The class defining the connection settings for a free@home system access point.
             </summary>
         </member>
-        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings.SysApIpAddress">
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionSettings.SysApIpAddress">
             <summary>
                 Gets or sets the IP address for the free@home system access point (SysAP).
             </summary>
         </member>
-        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings.SysApUserID">
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionSettings.SysApUserID">
             <summary>
                 Gets or sets the user ID to be used to connect to the SysAP.
             </summary>
         </member>
-        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionTestSettings.SysApPassword">
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.ConnectionSettings.SysApPassword">
             <summary>
                 Gets or sets the user password to be used to connect to the SysAP.
             </summary>
+        </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.Settings.DeviceSettings">
+            <summary>
+                The class defining the connection settings for a free@home device.
+            </summary>
+        </member>
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.DeviceSettings.DeviceId">
+            <summary>
+                Gets or sets the device identifier.
+            </summary>
+        </member>
+        <member name="P:PhilipGerke.StreamDeckFreeAtHome.Settings.DeviceSettings.Channel">
+            <summary>
+                Gets or sets device channel.
+            </summary>
+        </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin">
+            <summary>
+                A base plugin that implements the abstract methods from the <see cref="T:BarRaider.SdTools.PluginBase"/>.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin"/> instance.
+            </summary>
+            <param name="connection">The Stream Deck connection.</param>
+            <param name="payload">The initial payload.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin.ProcessMessage(Websocket.Client.ResponseMessage)">
+            <summary>
+                Processes the specified message.
+            </summary>
+            <param name="message">The <see cref="T:Websocket.Client.ResponseMessage"/> to be processed.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.WebSocketPlugin.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+            <inheritdoc/>
         </member>
     </members>
 </doc>
