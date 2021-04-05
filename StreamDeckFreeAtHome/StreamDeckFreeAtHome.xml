@@ -100,6 +100,27 @@
         <member name="M:PhilipGerke.StreamDeckFreeAtHome.ConnectionTestPlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
             <inheritdoc/>
         </member>
+        <member name="T:PhilipGerke.StreamDeckFreeAtHome.DimmerStatusPlugin">
+            <summary>
+                A stream deck action that shows the state of a dimmer and allows to toggle it.
+            </summary>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.DimmerStatusPlugin.#ctor(BarRaider.SdTools.ISDConnection,BarRaider.SdTools.InitialPayload)">
+            <summary>
+                Constructs a new <see cref="T:PhilipGerke.StreamDeckFreeAtHome.DimmerStatusPlugin"/> instance.
+            </summary>
+            <param name="connection">The Stream Deck connection.</param>
+            <param name="payload">The initial payload.</param>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.DimmerStatusPlugin.KeyPressed(BarRaider.SdTools.KeyPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.DimmerStatusPlugin.ReceivedSettings(BarRaider.SdTools.ReceivedSettingsPayload)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhilipGerke.StreamDeckFreeAtHome.DimmerStatusPlugin.ProcessMessage(Websocket.Client.ResponseMessage)">
+            <inheritdoc/>
+        </member>
         <member name="T:PhilipGerke.StreamDeckFreeAtHome.Program">
             <summary>
                 The entry point class.

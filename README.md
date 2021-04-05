@@ -11,11 +11,12 @@ A free@home plugin for the Elgato Stream Deck implemented in .NET5.
  ## Functionality ##
 
 * **Binary switches**: See and toggle the state of a binary switch.
+* **Dimmers**: See the power state and brightness of a dimmer actuator.
+<br/> Pressing the button will toggle the power state of the dimmer. At the moment, the brightness cannot be set by the plugin. This will come with the next update.
 * **Test Action**: Verify a connection can be made with the specified parameters.
 
 ### Planned features ###
 
-* Dimmers ⚡
 * Room Temperator Sensors
 * Scenes
 * Blinds
