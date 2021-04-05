@@ -13,8 +13,8 @@
     <RepositoryUrl>https://github.com/pgerke/streamdeck-freeathome</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>StreamDeck FreeAtHome</PackageTags>
-    <Version>0.2.0-alpha</Version>
-    <Description>A plugin for the Elgato Stream Deck that interfaces with the Free@Home System Access Point</Description>
+    <Version>0.3.0-alpha</Version>
+    <Description>A plugin for the Elgato Stream Deck that interfaces with the free@home System Access Point</Description>
     <Copyright>Philip Gerke © 2021</Copyright>
     <AssemblyName>com.philipgerke.freeathome</AssemblyName>
     <ApplicationIcon>pluginIcon.ico</ApplicationIcon>
@@ -34,6 +34,8 @@
   <ItemGroup>
     <None Remove="Images\actionBinarySwitch%402x.png" />
     <None Remove="Images\actionBinarySwitch.png" />
+    <None Remove="Images\actionDimmerStatus%402x.png" />
+    <None Remove="Images\actionDimmerStatus.png" />
     <None Remove="Images\actionIconTest%402x.png" />
     <None Remove="Images\actionIconTest.png" />
     <None Remove="Images\actionTestImage%402x.png" />
@@ -44,6 +46,12 @@
     <None Remove="Images\binarySwitchOn.png" />
     <None Remove="Images\binarySwitchUnknown%402x.png" />
     <None Remove="Images\binarySwitchUnknown.png" />
+    <None Remove="Images\dimmerOff%402x.png" />
+    <None Remove="Images\dimmerOff.png" />
+    <None Remove="Images\dimmerOn%402x.png" />
+    <None Remove="Images\dimmerOn.png" />
+    <None Remove="Images\dimmerUnknown%402x.png" />
+    <None Remove="Images\dimmerUnknown.png" />
     <None Remove="Images\pluginIcon%402x.png" />
     <None Remove="Images\pluginIcon.png" />
     <None Remove="PropertyInspector\BinarySwitch.html" />
@@ -56,6 +64,12 @@
     <None Remove="PropertyInspector\rcheck.svg" />
     <None Remove="PropertyInspector\sdpi.css" />
     <None Remove="PropertyInspector\sdtools.common.js" />
+    <Content Include="Images\dimmerUnknown.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dimmerUnknown@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Images\pluginIcon@2x.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
@@ -67,6 +81,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\actionBinarySwitch@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\actionDimmerStatus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\actionDimmerStatus@2x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\actionIconTest.png">
@@ -97,6 +117,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\binarySwitchUnknown@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dimmerOff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dimmerOff@2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dimmerOn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dimmerOn@2x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\pluginIcon.png">

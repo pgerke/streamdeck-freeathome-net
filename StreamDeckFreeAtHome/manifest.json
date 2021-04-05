@@ -39,6 +39,31 @@
       "Tooltip": "Shows the status of a binary switch and allows the user to toggle it.",
       "UUID": "com.philipgerke.freeathome.binaryswitch",
       "PropertyInspectorPath": "PropertyInspector/BinarySwitch.html"
+    },
+    {
+      "Icon": "Images/actionDimmerStatus",
+      "Name": "Dimmer Status",
+      "States":[
+        {
+          "Image": "Images/dimmerUnknown",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "Images/dimmerOff",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "Images/dimmerOn",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Shows the status of a dimmer control and allows the user to toggle it.",
+      "UUID": "com.philipgerke.freeathome.dimmerstatus",
+      "PropertyInspectorPath": "PropertyInspector/BinarySwitch.html"
     }
   ],
   "SDKVersion": 2,
@@ -50,7 +75,7 @@
   "Name": "free@home",
   "Icon": "Images/pluginIcon",
   "URL": "https://github.com/pgerke/streamdeck-freeathome/",
-  "Version": "0.2.0",
+  "Version": "0.3.0",
   "OS": [
     {
       "Platform": "windows",
