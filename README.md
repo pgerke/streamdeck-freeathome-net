@@ -55,7 +55,7 @@ The free@home plugin for the Elgato Stream Deck does not use cookies or tracking
 | :-------- | :-----: | ------: |
 | [Bootstrap Icons](https://icons.getbootstrap.com/) | MIT | v1.4.0 |
 | [StreamDeck-Tools](https://github.com/BarRaider/streamdeck-tools) | | v3.2.0 |
-| [Websocket.Client](https://github.com/Marfusios/websocket-client) | MIT | v4.3.30 |
+| [Websocket.Client](https://github.com/Marfusios/websocket-client) | MIT | v4.3.38 |
 | [Microsoft .NET](https://github.com/microsoft/dotnet) | MIT | v5.0.201 |
 
 

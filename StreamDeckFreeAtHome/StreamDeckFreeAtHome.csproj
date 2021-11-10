@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>PhilipGerke.StreamDeckFreeAtHome</RootNamespace>
     <Authors>Philip Gerke</Authors>
     <PackageId>PhilipGerke.StreamDeckFreeAtHome</PackageId>
@@ -171,7 +171,7 @@
 
   <ItemGroup>
     <PackageReference Include="StreamDeck-Tools" Version="3.2.0" />
-    <PackageReference Include="Websocket.Client" Version="4.3.30" />
+    <PackageReference Include="Websocket.Client" Version="4.3.38" />
   </ItemGroup>
 
   <ItemGroup>
